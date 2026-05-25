@@ -10,11 +10,10 @@ with col1:
 with col2:    
     st.title("BMI Calculator")
 
-
-st.slider("weight",0,200)
-import streamlit as st
-
-theme = st.segmented_control(
+cl1, cl2 = st.columns(2)
+with cl1:
+    st.number_input("Weight",step=5)
+    unitw = st.segmented_control(
     "",
     ["Kg", "Pounds"]
 )
