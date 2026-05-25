@@ -16,4 +16,11 @@ with cl1:
 with cl2:
     unitw= st.segmented_control("",["Kg","Pounds"])
 
-
+c1, c2= st.columns([1,10],vertical_alignment="center")
+with c1:
+    st.write("Height")
+with c2:
+    st.toggle("Inch System")
+a1, a2=st.columns(2)
+with a1:
+    a=st.number_input("", step=5)
