@@ -23,7 +23,12 @@ with c2:
     v=st.toggle("Inch System")
 a1, a2=st.columns(2, vertical_alignment="center")
 if v==False:
+    a1, a2=st.columns(2, vertical_alignment="center")
     with a1:
-        st.number_input(label="hight", step=5)
+        st.number_input(label="hight", step=5, label_visibility="collapsed")
     with a2:
         st.text("cm")
+else:
+    b1, b2, b3, b4= st.columns(4,vertical_alignment="center")
+    with b1:
+        st.number_input(lebal="hight", step=5, label_visibility="collapsed")
