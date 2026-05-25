@@ -5,4 +5,9 @@ st.set_page_config(
 )
 
 st.title("Calculate")
-st.write("Hi, This project is made on Streamlit. A python framework. Expolre to find the things you can find !")
+col1, col2=st.columns(2,gap="xxsmall")
+with col2:
+    st.write("Hi, This project is made on Streamlit. A python framework. Expolre to find the things you can find !")
+    st.write("On the left side of the screen you will find the menu of all the calculators.")
+with col1:
+    st.image("https://www.nicepng.com/png/full/952-9528838_anime-animal-transparent-background.png", width=240)
