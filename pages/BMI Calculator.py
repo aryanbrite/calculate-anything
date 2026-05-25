@@ -13,9 +13,7 @@ with col2:
 cl1, cl2 = st.columns(2)
 with cl1:
     st.number_input("Weight",step=5)
-    unitw = st.segmented_control(
-    "",
-    ["Kg", "Pounds"]
-)
+with cl2:
+    unitw= st.segmented_control("",["Kg","Pounds"])
 
 
