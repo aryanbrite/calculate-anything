@@ -21,9 +21,9 @@ with c1:
     st.write("Height")
 with c2:
     v=st.toggle("Inch System")
-a1, a2=st.columns(2)
-with a1:
-    a=st.number_input("", step=5)
-with a2:
-    if v == false:
-        st.write("cm")
+a1, a2=st.columns(2, vertical_alignment="center")
+if v==False:
+    with a1:
+        st.number_input(label="hight", step=5)
+    with a2:
+        st.text("cm")
