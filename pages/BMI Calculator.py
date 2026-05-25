@@ -12,7 +12,7 @@ with col2:
 
 cl1, cl2 = st.columns(2)
 with cl1:
-    Weight=st.number_input("Weight",step=5, min_value=0)
+    Wei=st.number_input("Weight",step=5, min_value=0)
 with cl2:
     unitw= st.segmented_control("",["Kg","Pounds"])
 st.write("")
@@ -42,4 +42,4 @@ else:
     hight= str((hightfee*30.48)+(hightin*2.54))
 
 if unitw=="pounds":
-    Weight=
+    Weight=wei*0.453592
