@@ -11,3 +11,5 @@ with col2:
     st.write("On the left side of the screen you will find the menu of all the calculators.")
 with col1:
     st.image("https://www.nicepng.com/png/full/952-9528838_anime-animal-transparent-background.png", width=240)
+st.write("How likely you would reccomend this app to your friend ?")
+st.feedback("faces")
