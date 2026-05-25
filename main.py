@@ -12,4 +12,4 @@ with col2:
 with col1:
     st.image("https://www.nicepng.com/png/full/952-9528838_anime-animal-transparent-background.png", width=240)
 st.write("How likely you would reccomend this app to your friend ?")
-st.feedback("faces")
+st.feedback("stars")
