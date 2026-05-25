@@ -42,4 +42,4 @@ else:
     hight= str((hightfee*30.48)+(hightin*2.54))
 
 if unitw=="pounds":
-    Weight=wei*0.453592
+    Weight=Wei*0.453592
