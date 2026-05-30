@@ -14,6 +14,8 @@ with col1:
 with col2:    
     st.title("BMI Calculator")
 
+st.write("Have you ever wondered if your weight is healthy for your height? That's where BMI comes in. BMI, or Body Mass Index, is a simple measurement that estimates whether a person's weight falls within a healthy range based on their height. It is calculated by dividing weight in kilograms by the square of height in meters. While BMI does not directly measure body fat or overall health, it is commonly used as a quick screening tool to identify whether someone may be underweight, at a healthy weight, overweight, or obese.")
+st.write("")
 cl1, cl2 = st.columns(2)
 with cl1:
     Wei=st.number_input("Weight",step=5, min_value=0)
@@ -70,3 +72,5 @@ elif st.session_state.BMI<30:
 else:
     st.error(f"Obesity, BMI is {st.session_state.BMI}")
     
+st.write("")
+st.write("You are a completely beautiful person, and a number on a screen can never define your worth. BMI is only a simple measurement based on height and weight. It does not measure your personality, kindness, confidence, talents, or the things that make you unique. While BMI can be useful as a general health indicator, it should never be the only way someone judges themselves. Your value as a person goes far beyond any calculation.")
