@@ -4,6 +4,7 @@ st.set_page_config(
     page_icon="💡",
 )
 
+
 col1, col2=st.columns([3,10], gap="xsmall", vertical_alignment="center")
 with col1:
     st.image("images/favpng_7d1161465538a1c0897ab46880a7ca8b.png",width=150)
@@ -15,6 +16,12 @@ with cl1:
     Wei=st.number_input("Weight",step=5, min_value=0)
 with cl2:
     unitw= st.segmented_control("",["Kg","Pounds"])
+
+if unitw=="kg":
+    st.session_state.weight==Wei
+else:
+    st.session_state.weight==Wei*0.45359237
+
 st.write("")
 c1, c2= st.columns([1,10],vertical_alignment="center")
 with c1:
@@ -40,6 +47,3 @@ else:
         st.text("inches")
 
     hight= str((hightfee*30.48)+(hightin*2.54))
-
-if unitw=="pounds":
-    Weight=Wei*0.453592
