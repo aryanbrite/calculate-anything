@@ -50,7 +50,7 @@ else:
     with b2:
         st.text("feet")
     with b3:
-        hightin=st.number_input(label="hightin", step=5, label_visibility="collapsed", min_value=0)
+        hightin=st.number_input(label="hightin", step=5, label_visibility="collapsed", min_value=0, max_value=11)
     with b4:
         st.text("inches")
 
@@ -59,7 +59,7 @@ else:
 if "BMI" not in st.session_state:
     st.session_state.BMI=0
 if st.button("Calculate") and st.session_state.height != 0 and st.session_state.weight != 0:
-    st.session_state.BMI=int(st.session_state.weight/(st.session_state.height/100)**2)
+    st.session_state.BMI=(st.session_state.weight/(st.session_state.height/100)**2)
     
 if st.session_state.BMI==0:
     pass
