@@ -20,7 +20,7 @@ cl1, cl2 = st.columns(2)
 with cl1:
     Wei=st.number_input("Weight",step=5, min_value=0)
 with cl2:
-    unitw= st.segmented_control("",["Kg","Pounds"])
+    unitw = st.segmented_control("", ["Kg", "Pounds"], default="Kg")
 
 if unitw=="Kg":
     st.session_state.weight=Wei
